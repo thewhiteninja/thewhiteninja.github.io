@@ -6,7 +6,7 @@ To show how the [ntfstool](https://github.com/thewhiteninja/ntfstool) could be u
 
 I didn't solved (most of) these challenges during the event but it is only to present the tool :smirk:
 
-- [Google CTF 2019 - Home Computer](ctfs/Google_CTF_2019-Home_Computer.md)
+- [Google CTF 2019 - Home Computer](ntfstool/Google_CTF_2019-Home_Computer.md)
 
 ### Writeups
 
