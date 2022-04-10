@@ -122,7 +122,7 @@ Let's find the key!
    | Id | Type                       | Non-resident | Length | Overview                                      |
    +---------------------------------------------------------------------------------------------------------+
    | 1  | $STANDARD_INFORMATION      | False        | 72     | File Created Time       : 2010-05-19 00:45:50 |
-   |    | Raw address: 00000052b850h |              |        | Last File Write Time    : 2010-05-19 02:31:59 |
+   |    | Raw address: 00000052f650h |              |        | Last File Write Time    : 2010-05-19 02:31:59 |
    |    |                            |              |        | FileRecord Changed Time : 2010-05-19 02:31:59 |
    |    |                            |              |        | Last Access Time        : 2010-05-19 00:45:50 |
    |    |                            |              |        | Permissions             :                     |
@@ -142,7 +142,7 @@ Let's find the key!
    |    |                            |              |        | Version Number          : 0                   |
    +---------------------------------------------------------------------------------------------------------+
    | 2  | $FILE_NAME                 | False        | 72     | Parent Dir Record Index : 5                   |
-   |    | Raw address: 00000052b8b0h |              |        | Parent Dir Sequence Num : 5                   |
+   |    | Raw address: 00000052f6b0h |              |        | Parent Dir Sequence Num : 5                   |
    |    |                            |              |        | File Created Time       : 2010-05-19 02:31:59 |
    |    |                            |              |        | Last File Write Time    : 2010-05-19 02:31:59 |
    |    |                            |              |        | FileRecord Changed Time : 2010-05-19 02:31:59 |
@@ -154,10 +154,10 @@ Let's find the key!
    |    |                            |              |        | Name                    : key                 |
    +---------------------------------------------------------------------------------------------------------+
    | 3  | $DATA                      | False        | 0      | Size: 0 (0.00 byte)                           |
-   |    | Raw address: 00000052b910h |              |        |                                               |
+   |    | Raw address: 00000052f710h |              |        |                                               |
    +---------------------------------------------------------------------------------------------------------+
    | 4  | $DATA                      | False        | 26     | Name: Zone.Identifier                         |
-   |    | Raw address: 00000052b978h |              |        | Size: 26 (26.00 bytes)                        |
+   |    | Raw address: 00000052f778h |              |        | Size: 26 (26.00 bytes)                        |
    +---------------------------------------------------------------------------------------------------------+
    ```
    
@@ -207,14 +207,14 @@ Let's find the key!
    ```
    +---------------------------------------------------------------------------------------------------------+
    | 3  | $DATA                      | False        | 0      | Size: 0 (0.00 byte)                           |
-   |    | Raw address: 00000052b910h |              |        |                                               |
+   |    | Raw address: 00000052f710h |              |        |                                               |
    +---------------------------------------------------------------------------------------------------------+
    ```
    
-   Let's see the file at offset: 0x52b910
+   Let's see the file at offset: 0x52f710
    
 8. HexEdit
 
-   ![hexedit.png](https://github.com/thewhiteninja/thewhiteninja.github.io/blob/main/ntfstool/images/hexedit.png?raw=true "File at 0x52b910")
+   ![hexedit.png](https://github.com/thewhiteninja/thewhiteninja.github.io/blob/main/ntfstool/images/hexedit.png?raw=true "File at 0x52f710")
    
 9. EOC (End of chall)
