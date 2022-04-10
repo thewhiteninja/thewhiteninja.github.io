@@ -24,20 +24,20 @@ Let's find some credentials!
    We can get info about the image using [info](https://github.com/thewhiteninja/ntfstool#info) command.
    It works for disk images but also volume images.
 
-    ```
-    > .\ntfstool.x64.exe info image=d:\family.ntfs  
-    Info for image:
-    ----------------
+   ```
+   > .\ntfstool.x64.exe info image=d:\family.ntfs  
+   Info for image:
+   ----------------
 
-    Size        : 26214400 (25.00 MiBs)
-    Volume      : RAW
+   Size        : 26214400 (25.00 MiBs)
+   Volume      : RAW
 
-    +--------------------------------------------------------------------+
-    | Id | Filesystem | Offset           | Size                          |
-    +--------------------------------------------------------------------+
-    | 0  | NTFS       | 0000000000000000 | 0000000001900000 (25.00 MiBs) |
-    +--------------------------------------------------------------------+
-    ```
+   +--------------------------------------------------------------------+
+   | Id | Filesystem | Offset           | Size                          |
+   +--------------------------------------------------------------------+
+   | 0  | NTFS       | 0000000000000000 | 0000000001900000 (25.00 MiBs) |
+   +--------------------------------------------------------------------+
+   ```
 
 2. Where are the creds?
 
