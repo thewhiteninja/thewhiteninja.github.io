@@ -26,8 +26,8 @@ Let's find some credentials!
 
    ```
    > .\ntfstool.x64.exe info image=d:\family.ntfs  
-   Info for image:
-   ----------------
+   Info for ImageFile
+   ------------------
 
    Size        : 26214400 (25.00 MiBs)
    Volume      : RAW
@@ -45,7 +45,7 @@ Let's find some credentials!
    
    ```
    > .\ntfstool.x64.exe mft.dump image=d:\family.ntfs volume=0 format=csv output=d:\ctf.csv
-   MFT Dump (inode:0) for  > Volume:0
+   MFT Dump (inode:0) for ImageFile > Volume:0
    ----------------------------------
 
    [+] $MFT size   : 12.98 MiBs
@@ -72,7 +72,7 @@ Let's find some credentials!
    
    ```
    > .\ntfstool.x64.exe mft.record image=d:\family.ntfs volume=0 inode=13288
-   MFT (inode:13288) for  > Volume:0
+   MFT (inode:13288) for ImageFile > Volume:0
    ---------------------------------
 
    Signature         : FILE
@@ -176,7 +176,7 @@ Let's find some credentials!
    
    ```
    > .\ntfstool.x64.exe extract image=d:\family.ntfs volume=0 inode=13288 output=d:\creds.txt
-   Extract file for  > Volume:0
+   Extract file for ImageFile > Volume:0
    ----------------------------
 
    [+] Opening d:\family.ntfs
@@ -193,7 +193,7 @@ Let's find some credentials!
    
    ```
    > .\ntfstool.x64.exe extract image=d:\family.ntfs volume=0 inode=13288 stream=FILE0 output=d:\hidden.dat
-   Extract file for  > Volume:0
+   Extract file for ImageFile > Volume:0
    ----------------------------
 
    [+] Opening d:\family.ntfs
@@ -206,7 +206,7 @@ Let's find some credentials!
    > file D:\hidden.dat
    D:\hidden.dat: PNG image data, 1234 x 339, 8-bit/color RGB, non-interlaced
 
-   > mv D:\hidden.dat D:\hidden.png
+   > mv D:\hidden.dat D:\credentials.png
    ```
    
 6. EOC (End of chall)
