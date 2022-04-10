@@ -29,14 +29,15 @@ Let's find some credentials!
     Info for image:
     ----------------
 
-        Size        : 26214400 (25.00 MiBs)
-        Volume      : RAW
+    Size        : 26214400 (25.00 MiBs)
+    Volume      : RAW
 
-        +--------------------------------------------------------------------+
-        | Id | Filesystem | Offset           | Size                          |
-        +--------------------------------------------------------------------+
-        | 0  | NTFS       | 0000000000000000 | 0000000001900000 (25.00 MiBs) |
-        +--------------------------------------------------------------------+```
+    +--------------------------------------------------------------------+
+    | Id | Filesystem | Offset           | Size                          |
+    +--------------------------------------------------------------------+
+    | 0  | NTFS       | 0000000000000000 | 0000000001900000 (25.00 MiBs) |
+    +--------------------------------------------------------------------+
+    ```
 
 2. Where are the creds?
 
@@ -61,7 +62,7 @@ Let's find some credentials!
    
    Here is the result when we search for "*cred*" files.
    
-   ![ctf.csv](images/ctf.csv.png "ctf.csv with Tad")
+   ![ctf.csv](https://github.com/thewhiteninja/thewhiteninja.github.io/blob/main/ntfstool/images/ctf.csv.png?raw=true "ctf.csv with Tad")
    
    We have one file (inode: 13288) named "credentials.txt".
    
@@ -170,6 +171,7 @@ Let's find some credentials!
 5. Extract the file content
 
    With the [extract](https://github.com/thewhiteninja/ntfstool#extract) command, we can ... extract the content of a file from the inode or path.
+   
    There is a `stream` to select the stream.
    
    ```
