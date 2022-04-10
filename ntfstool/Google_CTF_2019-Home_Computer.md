@@ -24,20 +24,19 @@ Let's find some credentials!
    We can get info about the image using [info](https://github.com/thewhiteninja/ntfstool#info) command.
    It works for disk images but also volume images.
 
-   ```
-   > .\ntfstool.x64.exe info image=d:\family.ntfs  
-   Info for ImageFile
-   ------------------
+    ```
+    > .\ntfstool.x64.exe info image=d:\family.ntfs  
+    Info for image:
+    ----------------
 
-   Size        : 26214400 (25.00 MiBs)
-   Volume      : RAW
+        Size        : 26214400 (25.00 MiBs)
+        Volume      : RAW
 
-   +--------------------------------------------------------------------+
-   | Id | Filesystem | Offset           | Size                          |
-   +--------------------------------------------------------------------+
-   | 0  | NTFS       | 0000000000000000 | 0000000001900000 (25.00 MiBs) |
-   +--------------------------------------------------------------------+
-   ```
+        +--------------------------------------------------------------------+
+        | Id | Filesystem | Offset           | Size                          |
+        +--------------------------------------------------------------------+
+        | 0  | NTFS       | 0000000000000000 | 0000000001900000 (25.00 MiBs) |
+        +--------------------------------------------------------------------+```
 
 2. Where are the creds?
 
@@ -45,7 +44,7 @@ Let's find some credentials!
    
    ```
    > .\ntfstool.x64.exe mft.dump image=d:\family.ntfs volume=0 format=csv output=d:\ctf.csv
-   MFT Dump (inode:0) for ImageFile > Volume:0
+   MFT Dump (inode:0) for  > Volume:0
    ----------------------------------
 
    [+] $MFT size   : 12.98 MiBs
@@ -62,7 +61,7 @@ Let's find some credentials!
    
    Here is the result when we search for "*cred*" files.
    
-   ![ctf.csv](https://github.com/thewhiteninja/thewhiteninja.github.io/blob/main/ntfstool/images/ctf.csv.png?raw=true "ctf.csv with Tad")
+   ![ctf.csv](images/ctf.csv.png "ctf.csv with Tad")
    
    We have one file (inode: 13288) named "credentials.txt".
    
@@ -72,7 +71,7 @@ Let's find some credentials!
    
    ```
    > .\ntfstool.x64.exe mft.record image=d:\family.ntfs volume=0 inode=13288
-   MFT (inode:13288) for ImageFile > Volume:0
+   MFT (inode:13288) for  > Volume:0
    ---------------------------------
 
    Signature         : FILE
@@ -171,12 +170,11 @@ Let's find some credentials!
 5. Extract the file content
 
    With the [extract](https://github.com/thewhiteninja/ntfstool#extract) command, we can ... extract the content of a file from the inode or path.
-   
    There is a `stream` to select the stream.
    
    ```
    > .\ntfstool.x64.exe extract image=d:\family.ntfs volume=0 inode=13288 output=d:\creds.txt
-   Extract file for ImageFile > Volume:0
+   Extract file for  > Volume:0
    ----------------------------
 
    [+] Opening d:\family.ntfs
@@ -193,7 +191,7 @@ Let's find some credentials!
    
    ```
    > .\ntfstool.x64.exe extract image=d:\family.ntfs volume=0 inode=13288 stream=FILE0 output=d:\hidden.dat
-   Extract file for ImageFile > Volume:0
+   Extract file for  > Volume:0
    ----------------------------
 
    [+] Opening d:\family.ntfs
@@ -206,7 +204,7 @@ Let's find some credentials!
    > file D:\hidden.dat
    D:\hidden.dat: PNG image data, 1234 x 339, 8-bit/color RGB, non-interlaced
 
-   > mv D:\hidden.dat D:\credentials.png
+   > mv D:\hidden.dat D:\hidden.png
    ```
    
 6. EOC (End of chall)
