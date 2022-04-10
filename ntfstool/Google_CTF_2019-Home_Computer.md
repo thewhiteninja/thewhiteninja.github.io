@@ -14,6 +14,10 @@
     nerve, to talk to those cool sophisticated locals. 
     So are these "Cauliflowers" earthlings? Not at all the unrelatable bipeds you imagined them to be. Will they be
     at the party? Hopefully SarahH has left some other work data on her home computer for you to learn more.
+    
+### Files
+
+- [family.zip](files/family.zip)
 
 ### Solution
 
@@ -54,6 +58,8 @@ Let's find some credentials!
    [+] Processing data: 12.98 MiBs
    [+] Closing volume
    ```
+   
+   You can download the CSV file here: [ctf.csv](files/ctf.csv)
    
 3. Read the CSV
 
@@ -165,7 +171,7 @@ Let's find some credentials!
    +---------------------------------------------------------------------------------------------------------+
    ```
    
-   There are two streams for this file.
+   There are two data streams for this file. 
    
 5. Extract the file content
 
