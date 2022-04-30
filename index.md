@@ -13,7 +13,7 @@ I didn't solved (most of) these challenges during the event but it is only to pr
 
 My writeups :blush:
 
-- [FIC 2021 - Naval Group](writeups/FIC_2021-Naval_Group.md)
+- [FIC 2021 - Naval Group](writeups/FIC2021 Naval Group/Readme.md)
 
 
 more coming soon ...

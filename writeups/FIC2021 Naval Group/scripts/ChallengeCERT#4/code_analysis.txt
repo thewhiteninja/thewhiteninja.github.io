@@ -1,0 +1,2070 @@
+
+########################################################################################################################
+
+# Write challenge message
+
+4ff00100		mov.w	r0, #1              # stdout
+0120a0e3		mov	r2, #1                  # 1 byte to write
+0470a0e3		mov	r7, #4                  # WRITE syscall
+06f15001		add.w	r1, r6, #0x50       # Please enter the password to decrypt the secret plans
+000000ef		svc	#0
+06f16c01		add.w	r1, r6, #0x6c
+00df    		svc	#0
+e51086e2		add	r1, r6, #0xe5
+000000ef		svc	#0
+06f16101		add.w	r1, r6, #0x61
+00df    		svc	#0
+06f17301		add.w	r1, r6, #0x73
+00df    		svc	#0
+e51086e2		add	r1, r6, #0xe5
+000000ef		svc	#0
+06f12001		add.w	r1, r6, #0x20
+000000ef		svc	#0
+06f16501		add.w	r1, r6, #0x65
+00df    		svc	#0
+06f16e01		add.w	r1, r6, #0x6e
+00df    		svc	#0
+741086e2		add	r1, r6, #0x74
+000000ef		svc	#0
+06f1e501		add.w	r1, r6, #0xe5
+00df    		svc	#0
+06f1f201		add.w	r1, r6, #0xf2
+000000ef		svc	#0
+201086e2		add	r1, r6, #0x20
+00df    		svc	#0
+06f17401		add.w	r1, r6, #0x74
+000000ef		svc	#0
+e81086e2		add	r1, r6, #0xe8
+00df    		svc	#0
+651086e2		add	r1, r6, #0x65
+000000ef		svc	#0
+06f1a001		add.w	r1, r6, #0xa0
+000000ef		svc	#0
+f01086e2		add	r1, r6, #0xf0
+00df    		svc	#0
+06f16101		add.w	r1, r6, #0x61
+000000ef		svc	#0
+06f17301		add.w	r1, r6, #0x73
+00df    		svc	#0
+731086e2		add	r1, r6, #0x73
+000000ef		svc	#0
+06f17701		add.w	r1, r6, #0x77
+000000ef		svc	#0
+06f1ef01		add.w	r1, r6, #0xef
+000000ef		svc	#0
+f21086e2		add	r1, r6, #0xf2
+00df    		svc	#0
+06f16401		add.w	r1, r6, #0x64
+00df    		svc	#0
+a01086e2		add	r1, r6, #0xa0
+00df    		svc	#0
+f41086e2		add	r1, r6, #0xf4
+00df    		svc	#0
+06f16f01		add.w	r1, r6, #0x6f
+00df    		svc	#0
+a01086e2		add	r1, r6, #0xa0
+000000ef		svc	#0
+06f1e401		add.w	r1, r6, #0xe4
+00df    		svc	#0
+e51086e2		add	r1, r6, #0xe5
+000000ef		svc	#0
+06f16301		add.w	r1, r6, #0x63
+000000ef		svc	#0
+721086e2		add	r1, r6, #0x72
+00df    		svc	#0
+06f17901		add.w	r1, r6, #0x79
+00df    		svc	#0
+06f1f001		add.w	r1, r6, #0xf0
+00df    		svc	#0
+f41086e2		add	r1, r6, #0xf4
+00df    		svc	#0
+06f12001		add.w	r1, r6, #0x20
+00df    		svc	#0
+741086e2		add	r1, r6, #0x74
+000000ef		svc	#0
+e81086e2		add	r1, r6, #0xe8
+00df    		svc	#0
+651086e2		add	r1, r6, #0x65
+00df    		svc	#0
+a01086e2		add	r1, r6, #0xa0
+00df    		svc	#0
+f31086e2		add	r1, r6, #0xf3
+00df    		svc	#0
+651086e2		add	r1, r6, #0x65
+000000ef		svc	#0
+06f1e301		add.w	r1, r6, #0xe3
+000000ef		svc	#0
+f21086e2		add	r1, r6, #0xf2
+000000ef		svc	#0
+651086e2		add	r1, r6, #0x65
+00df    		svc	#0
+741086e2		add	r1, r6, #0x74
+00df    		svc	#0
+a01086e2		add	r1, r6, #0xa0
+000000ef		svc	#0
+f01086e2		add	r1, r6, #0xf0
+000000ef		svc	#0
+06f16c01		add.w	r1, r6, #0x6c
+00df    		svc	#0
+e11086e2		add	r1, r6, #0xe1
+000000ef		svc	#0
+06f1ee01		add.w	r1, r6, #0xee
+00df    		svc	#0
+06f1f301		add.w	r1, r6, #0xf3
+00df    		svc	#0
+0a1086e2		add	r1, r6, #0xa
+000000ef		svc	#0
+501086e2		add	r1, r6, #0x50
+00df    		svc	#0
+611086e2		add	r1, r6, #0x61
+00df    		svc	#0
+06f17301		add.w	r1, r6, #0x73
+00df    		svc	#0
+731086e2		add	r1, r6, #0x73
+000000ef		svc	#0
+771086e2		add	r1, r6, #0x77
+00df    		svc	#0
+06f1ef01		add.w	r1, r6, #0xef
+000000ef		svc	#0
+06f1f201		add.w	r1, r6, #0xf2
+000000ef		svc	#0
+06f16401		add.w	r1, r6, #0x64
+00df    		svc	#0
+ba1086e2		add	r1, r6, #0xba
+000000ef		svc	#0
+201086e2		add	r1, r6, #0x20
+000000ef		svc	#0
+
+########################################################################################################################
+
+# Read 42 chars (password) to r4 = @A3004
+
+0000a0e3		mov	r0, #0
+0410a0e1		mov	r1, r4
+2a20a0e3		mov	r2, #0x2a
+4ff00307		mov.w	r7, #3
+00df    		svc	#0
+
+# Set last char to '\0'
+
+000020e0		eor	r0, r0, r0
+84f82900		strb.w	r0, [r4, #0x29]
+
+########################################################################################################################
+
+# Password checks
+# r3 value must stay at 0, any failed check will set a bit in r3
+
+# pdw = password as 32 bits value
+# pw  = password as 16 bits value
+# pb  = password as 8 bits value
+
+# unk_21050 = data @21050
+# AD B2 D2 AB A7 31 BF 6D 92 9D A0 BE 18 4E 40 00 96 DF 62 E2 58 CE 40 92 21 11 0D 40 2D C6 6D 08 D8 35 03 00
+
+# pdw[0] == pdw[10] (byte 0-4 = byte 10-14)
+2246    		mov	r2, r4
+000092e5		ldr	r0, [r2]
+d2f80a10		ldr.w	r1, [r2, #0xa]
+010050e1		cmp	r0, r1
+01308313		orrne	r3, r3, #1
+
+# pdw[4] == pdw[14]
+02f10402		add.w	r2, r2, #4
+1068    		ldr	r0, [r2]
+0a1092e5		ldr	r1, [r2, #0xa]
+010050e1		cmp	r0, r1
+01308313		orrne	r3, r3, #1
+
+# pw[8] == pw[18]
+02f10402		add.w	r2, r2, #4
+1088    		ldrh	r0, [r2]
+ba10d2e1		ldrh	r1, [r2, #0xa]
+010050e1		cmp	r0, r1
+01308313		orrne	r3, r3, #1
+
+# pdw[28] & unk_21050[20] = unk_21050[12]
+1c0094e5		ldr	r0, [r4, #0x1c]
+d9f81410		ldr.w	r1, [sb, #0x14]
+00ea0100		and.w	r0, r0, r1
+0c2099e5		ldr	r2, [sb, #0xc]
+020050e1		cmp	r0, r2
+01308313		orrne	r3, r3, #1
+
+# ((((pw[5]*2)+pw[5])*2)+pw[5]) = unk_21050[32]
+b4f80500		ldrh.w	r0, [r4, #5]
+0146    		mov	r1, r0
+0944    		add	r1, r1
+001081e0		add	r1, r1, r0
+0944    		add	r1, r1
+001081e0		add	r1, r1, r0
+202099e5		ldr	r2, [sb, #0x20]
+020051e1		cmp	r1, r2
+01308313		orrne	r3, r3, #1
+
+# pb[40] == pb[39]
+282084e2		add	r2, r4, #0x28
+0000d2e5		ldrb	r0, [r2]
+a2f10102		sub.w	r2, r2, #1
+0010d2e5		ldrb	r1, [r2]
+010050e1		cmp	r0, r1
+01308313		orrne	r3, r3, #1
+
+# pb[40] == pb[38]
+012042e2		sub	r2, r2, #1
+0010d2e5		ldrb	r1, [r2]
+010050e1		cmp	r0, r1
+01308313		orrne	r3, r3, #1
+
+# pdw[20]+pdw[24] = unk_21050[16]
+6069    		ldr	r0, [r4, #0x14]
+181094e5		ldr	r1, [r4, #0x18]
+010080e0		add	r0, r0, r1
+102099e5		ldr	r2, [sb, #0x10]
+020050e1		cmp	r0, r2
+01308313		orrne	r3, r3, #1
+
+# pdw[7] xor 0xffff = unk_21050[8]
+d700c4e1		ldrd	r0, r1, [r4, #7]
+0020a0e3		mov	r2, #0
+012042e2		sub	r2, r2, #1
+80ea0200		eor.w	r0, r0, r2
+021021e0		eor	r1, r1, r2
+082099e5		ldr	r2, [sb, #8]
+020050e1		cmp	r0, r2
+01308313		orrne	r3, r3, #1
+
+# pdw[11] xor 0xffff = unk_21050[0]
+d9f80020		ldr.w	r2, [sb]
+020051e1		cmp	r1, r2
+01308313		orrne	r3, r3, #1
+
+# pb[32] == pb[31]+36
+1f2084e2		add	r2, r4, #0x1f
+1178    		ldrb	r1, [r2]
+01f12401		add.w	r1, r1, #0x24
+02f10102		add.w	r2, r2, #1
+1078    		ldrb	r0, [r2]
+010040e0		sub	r0, r0, r1
+003083e1		orr	r3, r3, r0
+
+# pb[33] == pb[31]+36+10
+0a1081e2		add	r1, r1, #0xa
+012082e2		add	r2, r2, #1
+0000d2e5		ldrb	r0, [r2]
+010040e0		sub	r0, r0, r1
+003083e1		orr	r3, r3, r0
+
+# pb[34] == pb[31]+36+10-59
+a1f13b01		sub.w	r1, r1, #0x3b
+02f10102		add.w	r2, r2, #1
+0000d2e5		ldrb	r0, [r2]
+010040e0		sub	r0, r0, r1
+43ea0003		orr.w	r3, r3, r0
+
+# pb[35] == pb[31]+36+10-59+32
+01f12001		add.w	r1, r1, #0x20
+02f10102		add.w	r2, r2, #1
+0000d2e5		ldrb	r0, [r2]
+a0eb0100		sub.w	r0, r0, r1
+43ea0003		orr.w	r3, r3, r0
+
+# pb[36] == pb[31]+36+10-59+32-30
+1e1041e2		sub	r1, r1, #0x1e
+012082e2		add	r2, r2, #1
+0000d2e5		ldrb	r0, [r2]
+010040e0		sub	r0, r0, r1
+003083e1		orr	r3, r3, r0
+
+# pb[37] == pb[31]+36+10-59+32-30+42
+01f12a01		add.w	r1, r1, #0x2a
+012082e2		add	r2, r2, #1
+0000d2e5		ldrb	r0, [r2]
+010040e0		sub	r0, r0, r1
+003083e1		orr	r3, r3, r0
+
+# pb[38] == pb[31]+36+10-59+32-30+42-62
+a1f13e01		sub.w	r1, r1, #0x3e
+012082e2		add	r2, r2, #1
+0000d2e5		ldrb	r0, [r2]
+a0eb0100		sub.w	r0, r0, r1
+003083e1		orr	r3, r3, r0
+
+# Check r3 is still 0 ?
+4ff00000		mov.w	r0, #0
+000053e1		cmp	r3, r0
+0130a013		movne	r3, #1
+
+#pdw[28] & unk_21050[4] == unk_21050[24]
+e069    		ldr	r0, [r4, #0x1c]
+041099e5		ldr	r1, [sb, #4]
+010000e0		and	r0, r0, r1
+d9f81820		ldr.w	r2, [sb, #0x18]
+020050e1		cmp	r0, r2
+01308313		orrne	r3, r3, #1
+
+#pdw[24] ror 11 == unk_21050[28]
+180094e5		ldr	r0, [r4, #0x18]
+e005a0e1		ror	r0, r0, #0xb
+d9f81c10		ldr.w	r1, [sb, #0x1c]
+010050e1		cmp	r0, r1
+01308313		orrne	r3, r3, #1
+
+# Write the right message following r3 value
+4ff00100		mov.w	r0, #1
+55f82310		ldr.w	r1, [r5, r3, lsl #2]
+4ff02e02		mov.w	r2, #0x2e
+0470a0e3		mov	r7, #4
+000000ef		svc	#0
+
+########################################################################################################################
+
+# Secret plan decryption
+
+3046    		mov	r0, r6
+0410a0e1		mov	r1, r4
+2920a0e3		mov	r2, #0x29
+00b5    		push	{lr}
+c047    		blx	r8
+0100a0e3		mov	r0, #1
+0120a0e3		mov	r2, #1
+0470a0e3		mov	r7, #4
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+d81086e2		add	r1, r6, #0xd8
+00df    		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+00df    		svc	#0
+d81086e2		add	r1, r6, #0xd8
+00df    		svc	#0
+d81086e2		add	r1, r6, #0xd8
+00df    		svc	#0
+d81086e2		add	r1, r6, #0xd8
+00df    		svc	#0
+d81086e2		add	r1, r6, #0xd8
+000000ef		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+00df    		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+00df    		svc	#0
+06f19c01		add.w	r1, r6, #0x9c
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+000000ef		svc	#0
+e21086e2		add	r1, r6, #0xe2
+00df    		svc	#0
+06f18801		add.w	r1, r6, #0x88
+000000ef		svc	#0
+06f19401		add.w	r1, r6, #0x94
+000000ef		svc	#0
+d11086e2		add	r1, r6, #0xd1
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f1b101		add.w	r1, r6, #0xb1
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+b11086e2		add	r1, r6, #0xb1
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+d11086e2		add	r1, r6, #0xd1
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+06f18801		add.w	r1, r6, #0x88
+00df    		svc	#0
+d81086e2		add	r1, r6, #0xd8
+000000ef		svc	#0
+9c1086e2		add	r1, r6, #0x9c
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f18801		add.w	r1, r6, #0x88
+000000ef		svc	#0
+06f19401		add.w	r1, r6, #0x94
+000000ef		svc	#0
+981086e2		add	r1, r6, #0x98
+000000ef		svc	#0
+06f1e401		add.w	r1, r6, #0xe4
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f1b101		add.w	r1, r6, #0xb1
+000000ef		svc	#0
+b11086e2		add	r1, r6, #0xb1
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+b11086e2		add	r1, r6, #0xb1
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+b11086e2		add	r1, r6, #0xb1
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+b11086e2		add	r1, r6, #0xb1
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+e41086e2		add	r1, r6, #0xe4
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+06f18801		add.w	r1, r6, #0x88
+00df    		svc	#0
+06f19c01		add.w	r1, r6, #0x9c
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+751086e2		add	r1, r6, #0x75
+000000ef		svc	#0
+e41086e2		add	r1, r6, #0xe4
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+e41086e2		add	r1, r6, #0xe4
+00df    		svc	#0
+06f1e401		add.w	r1, r6, #0xe4
+000000ef		svc	#0
+06f10a01		add.w	r1, r6, #0xa
+000000ef		svc	#0
+0a1086e2		add	r1, r6, #0xa
+00df    		svc	#0
+06f15201		add.w	r1, r6, #0x52
+00df    		svc	#0
+06f18901		add.w	r1, r6, #0x89
+000000ef		svc	#0
+e41086e2		add	r1, r6, #0xe4
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f17601		add.w	r1, r6, #0x76
+000000ef		svc	#0
+e41086e2		add	r1, r6, #0xe4
+00df    		svc	#0
+06f1e401		add.w	r1, r6, #0xe4
+00df    		svc	#0
+761086e2		add	r1, r6, #0x76
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f1e401		add.w	r1, r6, #0xe4
+000000ef		svc	#0
+06f18901		add.w	r1, r6, #0x89
+000000ef		svc	#0
+e41086e2		add	r1, r6, #0xe4
+00df    		svc	#0
+611086e2		add	r1, r6, #0x61
+000000ef		svc	#0
+b21086e2		add	r1, r6, #0xb2
+000000ef		svc	#0
+e41086e2		add	r1, r6, #0xe4
+00df    		svc	#0
+e41086e2		add	r1, r6, #0xe4
+000000ef		svc	#0
+891086e2		add	r1, r6, #0x89
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+d81086e2		add	r1, r6, #0xd8
+000000ef		svc	#0
+d81086e2		add	r1, r6, #0xd8
+000000ef		svc	#0
+d81086e2		add	r1, r6, #0xd8
+000000ef		svc	#0
+d81086e2		add	r1, r6, #0xd8
+00df    		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+000000ef		svc	#0
+06f19c01		add.w	r1, r6, #0x9c
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1ec01		add.w	r1, r6, #0xec
+000000ef		svc	#0
+06f16601		add.w	r1, r6, #0x66
+00df    		svc	#0
+661086e2		add	r1, r6, #0x66
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+9a1086e2		add	r1, r6, #0x9a
+00df    		svc	#0
+b21086e2		add	r1, r6, #0xb2
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+b11086e2		add	r1, r6, #0xb1
+000000ef		svc	#0
+06f18801		add.w	r1, r6, #0x88
+000000ef		svc	#0
+06f18801		add.w	r1, r6, #0x88
+00df    		svc	#0
+06f19401		add.w	r1, r6, #0x94
+000000ef		svc	#0
+06f19401		add.w	r1, r6, #0x94
+000000ef		svc	#0
+941086e2		add	r1, r6, #0x94
+00df    		svc	#0
+941086e2		add	r1, r6, #0x94
+000000ef		svc	#0
+06f19401		add.w	r1, r6, #0x94
+00df    		svc	#0
+06f19401		add.w	r1, r6, #0x94
+000000ef		svc	#0
+06f1b101		add.w	r1, r6, #0xb1
+00df    		svc	#0
+381086e2		add	r1, r6, #0x38
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+000000ef		svc	#0
+06f16101		add.w	r1, r6, #0x61
+000000ef		svc	#0
+941086e2		add	r1, r6, #0x94
+000000ef		svc	#0
+941086e2		add	r1, r6, #0x94
+00df    		svc	#0
+06f19401		add.w	r1, r6, #0x94
+00df    		svc	#0
+06f19401		add.w	r1, r6, #0x94
+00df    		svc	#0
+06f19601		add.w	r1, r6, #0x96
+00df    		svc	#0
+e41086e2		add	r1, r6, #0xe4
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+881086e2		add	r1, r6, #0x88
+00df    		svc	#0
+06f19401		add.w	r1, r6, #0x94
+000000ef		svc	#0
+1b1086e2		add	r1, r6, #0x1b
+00df    		svc	#0
+06f15201		add.w	r1, r6, #0x52
+00df    		svc	#0
+06f19401		add.w	r1, r6, #0x94
+000000ef		svc	#0
+06f18801		add.w	r1, r6, #0x88
+000000ef		svc	#0
+9c1086e2		add	r1, r6, #0x9c
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f17501		add.w	r1, r6, #0x75
+000000ef		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+00df    		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+000000ef		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+000000ef		svc	#0
+06f18901		add.w	r1, r6, #0x89
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f18801		add.w	r1, r6, #0x88
+00df    		svc	#0
+881086e2		add	r1, r6, #0x88
+00df    		svc	#0
+891086e2		add	r1, r6, #0x89
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+e11086e2		add	r1, r6, #0xe1
+00df    		svc	#0
+661086e2		add	r1, r6, #0x66
+00df    		svc	#0
+06f16601		add.w	r1, r6, #0x66
+000000ef		svc	#0
+06f16601		add.w	r1, r6, #0x66
+000000ef		svc	#0
+06f16601		add.w	r1, r6, #0x66
+000000ef		svc	#0
+661086e2		add	r1, r6, #0x66
+00df    		svc	#0
+06f16601		add.w	r1, r6, #0x66
+000000ef		svc	#0
+06f18901		add.w	r1, r6, #0x89
+000000ef		svc	#0
+e11086e2		add	r1, r6, #0xe1
+00df    		svc	#0
+06f16601		add.w	r1, r6, #0x66
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f19a01		add.w	r1, r6, #0x9a
+000000ef		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+00df    		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+000000ef		svc	#0
+ec1086e2		add	r1, r6, #0xec
+00df    		svc	#0
+f11086e2		add	r1, r6, #0xf1
+000000ef		svc	#0
+661086e2		add	r1, r6, #0x66
+000000ef		svc	#0
+06f19a01		add.w	r1, r6, #0x9a
+000000ef		svc	#0
+06f17501		add.w	r1, r6, #0x75
+000000ef		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+00df    		svc	#0
+3d1086e2		add	r1, r6, #0x3d
+000000ef		svc	#0
+06f16c01		add.w	r1, r6, #0x6c
+000000ef		svc	#0
+06f1d301		add.w	r1, r6, #0xd3
+00df    		svc	#0
+0a1086e2		add	r1, r6, #0xa
+000000ef		svc	#0
+06f18b01		add.w	r1, r6, #0x8b
+00df    		svc	#0
+06f10a01		add.w	r1, r6, #0xa
+000000ef		svc	#0
+941086e2		add	r1, r6, #0x94
+000000ef		svc	#0
+06f1c501		add.w	r1, r6, #0xc5
+00df    		svc	#0
+9c1086e2		add	r1, r6, #0x9c
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+611086e2		add	r1, r6, #0x61
+00df    		svc	#0
+681086e2		add	r1, r6, #0x68
+000000ef		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+000000ef		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+00df    		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+00df    		svc	#0
+d81086e2		add	r1, r6, #0xd8
+000000ef		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+000000ef		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+000000ef		svc	#0
+06f1ec01		add.w	r1, r6, #0xec
+00df    		svc	#0
+06f16601		add.w	r1, r6, #0x66
+00df    		svc	#0
+06f19a01		add.w	r1, r6, #0x9a
+00df    		svc	#0
+d81086e2		add	r1, r6, #0xd8
+000000ef		svc	#0
+d81086e2		add	r1, r6, #0xd8
+000000ef		svc	#0
+d81086e2		add	r1, r6, #0xd8
+000000ef		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+000000ef		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+000000ef		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+000000ef		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+000000ef		svc	#0
+d81086e2		add	r1, r6, #0xd8
+000000ef		svc	#0
+f11086e2		add	r1, r6, #0xf1
+000000ef		svc	#0
+661086e2		add	r1, r6, #0x66
+00df    		svc	#0
+661086e2		add	r1, r6, #0x66
+00df    		svc	#0
+661086e2		add	r1, r6, #0x66
+000000ef		svc	#0
+06f16601		add.w	r1, r6, #0x66
+00df    		svc	#0
+06f16601		add.w	r1, r6, #0x66
+00df    		svc	#0
+06f16601		add.w	r1, r6, #0x66
+00df    		svc	#0
+b31086e2		add	r1, r6, #0xb3
+000000ef		svc	#0
+cd1086e2		add	r1, r6, #0xcd
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+191086e2		add	r1, r6, #0x19
+000000ef		svc	#0
+06f19401		add.w	r1, r6, #0x94
+00df    		svc	#0
+0a1086e2		add	r1, r6, #0xa
+00df    		svc	#0
+06f15701		add.w	r1, r6, #0x57
+00df    		svc	#0
+661086e2		add	r1, r6, #0x66
+00df    		svc	#0
+b21086e2		add	r1, r6, #0xb2
+00df    		svc	#0
+3d1086e2		add	r1, r6, #0x3d
+00df    		svc	#0
+06f18301		add.w	r1, r6, #0x83
+000000ef		svc	#0
+941086e2		add	r1, r6, #0x94
+000000ef		svc	#0
+06f10201		add.w	r1, r6, #2
+00df    		svc	#0
+06f19c01		add.w	r1, r6, #0x9c
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1c901		add.w	r1, r6, #0xc9
+00df    		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+000000ef		svc	#0
+06f17501		add.w	r1, r6, #0x75
+000000ef		svc	#0
+06f1d801		add.w	r1, r6, #0xd8
+000000ef		svc	#0
+06f15901		add.w	r1, r6, #0x59
+000000ef		svc	#0
+881086e2		add	r1, r6, #0x88
+000000ef		svc	#0
+941086e2		add	r1, r6, #0x94
+00df    		svc	#0
+941086e2		add	r1, r6, #0x94
+000000ef		svc	#0
+06f18801		add.w	r1, r6, #0x88
+00df    		svc	#0
+06f1c901		add.w	r1, r6, #0xc9
+000000ef		svc	#0
+0a1086e2		add	r1, r6, #0xa
+00df    		svc	#0
+0a1086e2		add	r1, r6, #0xa
+000000ef		svc	#0
+06f17501		add.w	r1, r6, #0x75
+000000ef		svc	#0
+06f18901		add.w	r1, r6, #0x89
+00df    		svc	#0
+06f19601		add.w	r1, r6, #0x96
+00df    		svc	#0
+0a1086e2		add	r1, r6, #0xa
+000000ef		svc	#0
+06f10a01		add.w	r1, r6, #0xa
+000000ef		svc	#0
+661086e2		add	r1, r6, #0x66
+00df    		svc	#0
+06f18101		add.w	r1, r6, #0x81
+00df    		svc	#0
+881086e2		add	r1, r6, #0x88
+00df    		svc	#0
+941086e2		add	r1, r6, #0x94
+000000ef		svc	#0
+941086e2		add	r1, r6, #0x94
+000000ef		svc	#0
+ec1086e2		add	r1, r6, #0xec
+000000ef		svc	#0
+06f16601		add.w	r1, r6, #0x66
+000000ef		svc	#0
+06f1b201		add.w	r1, r6, #0xb2
+00df    		svc	#0
+06f1bb01		add.w	r1, r6, #0xbb
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+9a1086e2		add	r1, r6, #0x9a
+00df    		svc	#0
+d81086e2		add	r1, r6, #0xd8
+000000ef		svc	#0
+e51086e2		add	r1, r6, #0xe5
+00df    		svc	#0
+06f1e501		add.w	r1, r6, #0xe5
+00df    		svc	#0
+06f10a01		add.w	r1, r6, #0xa
+00df    		svc	#0
+0a1086e2		add	r1, r6, #0xa
+000000ef		svc	#0
+06f12101		add.w	r1, r6, #0x21
+00df    		svc	#0
+06f16101		add.w	r1, r6, #0x61
+000000ef		svc	#0
+ae1086e2		add	r1, r6, #0xae
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+521086e2		add	r1, r6, #0x52
+000000ef		svc	#0
+b21086e2		add	r1, r6, #0xb2
+000000ef		svc	#0
+d31086e2		add	r1, r6, #0xd3
+00df    		svc	#0
+06f10a01		add.w	r1, r6, #0xa
+000000ef		svc	#0
+06f10a01		add.w	r1, r6, #0xa
+00df    		svc	#0
+06f12101		add.w	r1, r6, #0x21
+000000ef		svc	#0
+06f15901		add.w	r1, r6, #0x59
+000000ef		svc	#0
+06f19c01		add.w	r1, r6, #0x9c
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f17501		add.w	r1, r6, #0x75
+00df    		svc	#0
+941086e2		add	r1, r6, #0x94
+00df    		svc	#0
+941086e2		add	r1, r6, #0x94
+00df    		svc	#0
+06f19601		add.w	r1, r6, #0x96
+00df    		svc	#0
+06f1e401		add.w	r1, r6, #0xe4
+000000ef		svc	#0
+06f19801		add.w	r1, r6, #0x98
+00df    		svc	#0
+981086e2		add	r1, r6, #0x98
+000000ef		svc	#0
+e41086e2		add	r1, r6, #0xe4
+00df    		svc	#0
+e41086e2		add	r1, r6, #0xe4
+000000ef		svc	#0
+06f1e401		add.w	r1, r6, #0xe4
+000000ef		svc	#0
+06f19801		add.w	r1, r6, #0x98
+000000ef		svc	#0
+06f19801		add.w	r1, r6, #0x98
+000000ef		svc	#0
+06f1e401		add.w	r1, r6, #0xe4
+00df    		svc	#0
+751086e2		add	r1, r6, #0x75
+00df    		svc	#0
+06f19401		add.w	r1, r6, #0x94
+00df    		svc	#0
+941086e2		add	r1, r6, #0x94
+00df    		svc	#0
+961086e2		add	r1, r6, #0x96
+00df    		svc	#0
+06f19c01		add.w	r1, r6, #0x9c
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1b101		add.w	r1, r6, #0xb1
+00df    		svc	#0
+611086e2		add	r1, r6, #0x61
+000000ef		svc	#0
+06f1b201		add.w	r1, r6, #0xb2
+000000ef		svc	#0
+06f18901		add.w	r1, r6, #0x89
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+b11086e2		add	r1, r6, #0xb1
+000000ef		svc	#0
+06f16101		add.w	r1, r6, #0x61
+00df    		svc	#0
+06f1b201		add.w	r1, r6, #0xb2
+00df    		svc	#0
+06f18901		add.w	r1, r6, #0x89
+000000ef		svc	#0
+9c1086e2		add	r1, r6, #0x9c
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1e101		add.w	r1, r6, #0xe1
+000000ef		svc	#0
+06f16601		add.w	r1, r6, #0x66
+000000ef		svc	#0
+661086e2		add	r1, r6, #0x66
+00df    		svc	#0
+06f1b301		add.w	r1, r6, #0xb3
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+e11086e2		add	r1, r6, #0xe1
+000000ef		svc	#0
+06f16601		add.w	r1, r6, #0x66
+000000ef		svc	#0
+06f16601		add.w	r1, r6, #0x66
+000000ef		svc	#0
+b31086e2		add	r1, r6, #0xb3
+000000ef		svc	#0
+bb1086e2		add	r1, r6, #0xbb
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+b11086e2		add	r1, r6, #0xb1
+00df    		svc	#0
+06f17601		add.w	r1, r6, #0x76
+00df    		svc	#0
+761086e2		add	r1, r6, #0x76
+00df    		svc	#0
+06f18901		add.w	r1, r6, #0x89
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f1b101		add.w	r1, r6, #0xb1
+00df    		svc	#0
+06f17601		add.w	r1, r6, #0x76
+00df    		svc	#0
+761086e2		add	r1, r6, #0x76
+000000ef		svc	#0
+06f18901		add.w	r1, r6, #0x89
+000000ef		svc	#0
+06f19c01		add.w	r1, r6, #0x9c
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+b11086e2		add	r1, r6, #0xb1
+000000ef		svc	#0
+06f18801		add.w	r1, r6, #0x88
+00df    		svc	#0
+881086e2		add	r1, r6, #0x88
+00df    		svc	#0
+06f18901		add.w	r1, r6, #0x89
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+b11086e2		add	r1, r6, #0xb1
+00df    		svc	#0
+881086e2		add	r1, r6, #0x88
+000000ef		svc	#0
+881086e2		add	r1, r6, #0x88
+000000ef		svc	#0
+06f18901		add.w	r1, r6, #0x89
+000000ef		svc	#0
+9c1086e2		add	r1, r6, #0x9c
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+d31086e2		add	r1, r6, #0xd3
+00df    		svc	#0
+06f16101		add.w	r1, r6, #0x61
+00df    		svc	#0
+06f1b201		add.w	r1, r6, #0xb2
+00df    		svc	#0
+06f12101		add.w	r1, r6, #0x21
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f1d301		add.w	r1, r6, #0xd3
+000000ef		svc	#0
+06f16101		add.w	r1, r6, #0x61
+000000ef		svc	#0
+b21086e2		add	r1, r6, #0xb2
+00df    		svc	#0
+06f12101		add.w	r1, r6, #0x21
+00df    		svc	#0
+06f19c01		add.w	r1, r6, #0x9c
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+b21086e2		add	r1, r6, #0xb2
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+611086e2		add	r1, r6, #0x61
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+b21086e2		add	r1, r6, #0xb2
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+06f16101		add.w	r1, r6, #0x61
+00df    		svc	#0
+9c1086e2		add	r1, r6, #0x9c
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+611086e2		add	r1, r6, #0x61
+00df    		svc	#0
+661086e2		add	r1, r6, #0x66
+000000ef		svc	#0
+06f16801		add.w	r1, r6, #0x68
+000000ef		svc	#0
+b21086e2		add	r1, r6, #0xb2
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19a01		add.w	r1, r6, #0x9a
+000000ef		svc	#0
+d81086e2		add	r1, r6, #0xd8
+000000ef		svc	#0
+ec1086e2		add	r1, r6, #0xec
+00df    		svc	#0
+06f1f101		add.w	r1, r6, #0xf1
+00df    		svc	#0
+06f19c01		add.w	r1, r6, #0x9c
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f13d01		add.w	r1, r6, #0x3d
+000000ef		svc	#0
+891086e2		add	r1, r6, #0x89
+00df    		svc	#0
+06f19201		add.w	r1, r6, #0x92
+00df    		svc	#0
+06f19201		add.w	r1, r6, #0x92
+000000ef		svc	#0
+06f1b101		add.w	r1, r6, #0xb1
+000000ef		svc	#0
+c91086e2		add	r1, r6, #0xc9
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f13d01		add.w	r1, r6, #0x3d
+00df    		svc	#0
+06f18901		add.w	r1, r6, #0x89
+00df    		svc	#0
+921086e2		add	r1, r6, #0x92
+000000ef		svc	#0
+921086e2		add	r1, r6, #0x92
+00df    		svc	#0
+06f1b101		add.w	r1, r6, #0xb1
+000000ef		svc	#0
+c91086e2		add	r1, r6, #0xc9
+00df    		svc	#0
+06f19c01		add.w	r1, r6, #0x9c
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+ae1086e2		add	r1, r6, #0xae
+000000ef		svc	#0
+0a1086e2		add	r1, r6, #0xa
+00df    		svc	#0
+06f18b01		add.w	r1, r6, #0x8b
+000000ef		svc	#0
+06f19401		add.w	r1, r6, #0x94
+00df    		svc	#0
+06f19401		add.w	r1, r6, #0x94
+00df    		svc	#0
+06f11b01		add.w	r1, r6, #0x1b
+00df    		svc	#0
+831086e2		add	r1, r6, #0x83
+00df    		svc	#0
+191086e2		add	r1, r6, #0x19
+00df    		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f1ae01		add.w	r1, r6, #0xae
+000000ef		svc	#0
+0a1086e2		add	r1, r6, #0xa
+000000ef		svc	#0
+06f18b01		add.w	r1, r6, #0x8b
+00df    		svc	#0
+941086e2		add	r1, r6, #0x94
+000000ef		svc	#0
+06f19401		add.w	r1, r6, #0x94
+00df    		svc	#0
+1b1086e2		add	r1, r6, #0x1b
+00df    		svc	#0
+06f18301		add.w	r1, r6, #0x83
+00df    		svc	#0
+191086e2		add	r1, r6, #0x19
+000000ef		svc	#0
+06f19c01		add.w	r1, r6, #0x9c
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+000000ef		svc	#0
+a91086e2		add	r1, r6, #0xa9
+00df    		svc	#0
+06f18801		add.w	r1, r6, #0x88
+00df    		svc	#0
+941086e2		add	r1, r6, #0x94
+00df    		svc	#0
+021086e2		add	r1, r6, #2
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+06f16c01		add.w	r1, r6, #0x6c
+000000ef		svc	#0
+941086e2		add	r1, r6, #0x94
+00df    		svc	#0
+06f10201		add.w	r1, r6, #2
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+881086e2		add	r1, r6, #0x88
+000000ef		svc	#0
+991086e2		add	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f18801		add.w	r1, r6, #0x88
+000000ef		svc	#0
+941086e2		add	r1, r6, #0x94
+00df    		svc	#0
+021086e2		add	r1, r6, #2
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+06f16c01		add.w	r1, r6, #0x6c
+000000ef		svc	#0
+06f19401		add.w	r1, r6, #0x94
+000000ef		svc	#0
+021086e2		add	r1, r6, #2
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+06f18801		add.w	r1, r6, #0x88
+000000ef		svc	#0
+06f19c01		add.w	r1, r6, #0x9c
+000000ef		svc	#0
+06f19c01		add.w	r1, r6, #0x9c
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+9c1086e2		add	r1, r6, #0x9c
+00df    		svc	#0
+06f10e01		add.w	r1, r6, #0xe
+00df    		svc	#0
+06f13301		add.w	r1, r6, #0x33
+000000ef		svc	#0
+e11086e2		add	r1, r6, #0xe1
+000000ef		svc	#0
+e11086e2		add	r1, r6, #0xe1
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+cf1086e2		add	r1, r6, #0xcf
+00df    		svc	#0
+2a1086e2		add	r1, r6, #0x2a
+000000ef		svc	#0
+7f1086e2		add	r1, r6, #0x7f
+000000ef		svc	#0
+06f1a601		add.w	r1, r6, #0xa6
+00df    		svc	#0
+a91086e2		add	r1, r6, #0xa9
+000000ef		svc	#0
+761086e2		add	r1, r6, #0x76
+000000ef		svc	#0
+9c1086e2		add	r1, r6, #0x9c
+000000ef		svc	#0
+06f1ec01		add.w	r1, r6, #0xec
+00df    		svc	#0
+fd1086e2		add	r1, r6, #0xfd
+000000ef		svc	#0
+001086e2		add	r1, r6, #0
+000000ef		svc	#0
+06f15401		add.w	r1, r6, #0x54
+00df    		svc	#0
+06f19901		add.w	r1, r6, #0x99
+00df    		svc	#0
+001086e2		add	r1, r6, #0
+000000ef		svc	#0
+541086e2		add	r1, r6, #0x54
+00df    		svc	#0
+06f1a601		add.w	r1, r6, #0xa6
+00df    		svc	#0
+06f1fc01		add.w	r1, r6, #0xfc
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+2a1086e2		add	r1, r6, #0x2a
+00df    		svc	#0
+06f1c701		add.w	r1, r6, #0xc7
+000000ef		svc	#0
+06f19901		add.w	r1, r6, #0x99
+000000ef		svc	#0
+06f15401		add.w	r1, r6, #0x54
+000000ef		svc	#0
+a21086e2		add	r1, r6, #0xa2
+000000ef		svc	#0
+a61086e2		add	r1, r6, #0xa6
+000000ef		svc	#0
+06f1a901		add.w	r1, r6, #0xa9
+00df    		svc	#0
+571086e2		add	r1, r6, #0x57
+00df    		svc	#0
+a21086e2		add	r1, r6, #0xa2
+00df    		svc	#0
+06f1fd01		add.w	r1, r6, #0xfd
+00df    		svc	#0
+1d1086e2		add	r1, r6, #0x1d
+000000ef		svc	#0
+1d1086e2		add	r1, r6, #0x1d
+000000ef		svc	#0
+06f13301		add.w	r1, r6, #0x33
+00df    		svc	#0
+7f1086e2		add	r1, r6, #0x7f
+00df    		svc	#0
+06f1b001		add.w	r1, r6, #0xb0
+00df    		svc	#0
+06f13301		add.w	r1, r6, #0x33
+00df    		svc	#0
+381086e2		add	r1, r6, #0x38
+00df    		svc	#0
+06f19c01		add.w	r1, r6, #0x9c
+00df    		svc	#0
+06f1a201		add.w	r1, r6, #0xa2
+00df    		svc	#0
+541086e2		add	r1, r6, #0x54
+000000ef		svc	#0
+06f15401		add.w	r1, r6, #0x54
+000000ef		svc	#0
+06f1fc01		add.w	r1, r6, #0xfc
+000000ef		svc	#0
+06f10001		add.w	r1, r6, #0
+00df    		svc	#0
+381086e2		add	r1, r6, #0x38
+000000ef		svc	#0
+06f13d01		add.w	r1, r6, #0x3d
+000000ef		svc	#0
+06f13d01		add.w	r1, r6, #0x3d
+00df    		svc	#0
+cf1086e2		add	r1, r6, #0xcf
+000000ef		svc	#0
+6c1086e2		add	r1, r6, #0x6c
+00df    		svc	#0
+06f12a01		add.w	r1, r6, #0x2a
+00df    		svc	#0
+06f1fc01		add.w	r1, r6, #0xfc
+000000ef		svc	#0
+c71086e2		add	r1, r6, #0xc7
+00df    		svc	#0
+06f1d501		add.w	r1, r6, #0xd5
+00df    		svc	#0
+e11086e2		add	r1, r6, #0xe1
+000000ef		svc	#0
+331086e2		add	r1, r6, #0x33
+000000ef		svc	#0
+881086e2		add	r1, r6, #0x88
+00df    		svc	#0
+c81086e2		add	r1, r6, #0xc8
+00df    		svc	#0
+fd1086e2		add	r1, r6, #0xfd
+00df    		svc	#0
+0f1086e2		add	r1, r6, #0xf
+00df    		svc	#0
+06f17c01		add.w	r1, r6, #0x7c
+00df    		svc	#0
+06f1e101		add.w	r1, r6, #0xe1
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+b01086e2		add	r1, r6, #0xb0
+000000ef		svc	#0
+6c1086e2		add	r1, r6, #0x6c
+00df    		svc	#0
+06f12a01		add.w	r1, r6, #0x2a
+000000ef		svc	#0
+721086e2		add	r1, r6, #0x72
+00df    		svc	#0
+06f1fc01		add.w	r1, r6, #0xfc
+000000ef		svc	#0
+06f18801		add.w	r1, r6, #0x88
+000000ef		svc	#0
+571086e2		add	r1, r6, #0x57
+000000ef		svc	#0
+2a1086e2		add	r1, r6, #0x2a
+00df    		svc	#0
+b51086e2		add	r1, r6, #0xb5
+000000ef		svc	#0
+06f13d01		add.w	r1, r6, #0x3d
+00df    		svc	#0
+06f1fc01		add.w	r1, r6, #0xfc
+000000ef		svc	#0
+06f1c701		add.w	r1, r6, #0xc7
+000000ef		svc	#0
+0f1086e2		add	r1, r6, #0xf
+00df    		svc	#0
+06f11001		add.w	r1, r6, #0x10
+000000ef		svc	#0
+941086e2		add	r1, r6, #0x94
+00df    		svc	#0
+06f10001		add.w	r1, r6, #0
+000000ef		svc	#0
+06f1a201		add.w	r1, r6, #0xa2
+00df    		svc	#0
+06f1fd01		add.w	r1, r6, #0xfd
+00df    		svc	#0
+06f16c01		add.w	r1, r6, #0x6c
+000000ef		svc	#0
+06f1d501		add.w	r1, r6, #0xd5
+000000ef		svc	#0
+7f1086e2		add	r1, r6, #0x7f
+00df    		svc	#0
+b01086e2		add	r1, r6, #0xb0
+00df    		svc	#0
+3d1086e2		add	r1, r6, #0x3d
+000000ef		svc	#0
+001086e2		add	r1, r6, #0
+00df    		svc	#0
+06f1a201		add.w	r1, r6, #0xa2
+000000ef		svc	#0
+06f1fd01		add.w	r1, r6, #0xfd
+000000ef		svc	#0
+06f16c01		add.w	r1, r6, #0x6c
+00df    		svc	#0
+d51086e2		add	r1, r6, #0xd5
+00df    		svc	#0
+7f1086e2		add	r1, r6, #0x7f
+00df    		svc	#0
+06f1b001		add.w	r1, r6, #0xb0
+00df    		svc	#0
+06f10001		add.w	r1, r6, #0
+00df    		svc	#0
+06f13d01		add.w	r1, r6, #0x3d
+000000ef		svc	#0
+4a1086e2		add	r1, r6, #0x4a
+000000ef		svc	#0
+db1086e2		add	r1, r6, #0xdb
+000000ef		svc	#0
+001086e2		add	r1, r6, #0
+00df    		svc	#0
+b01086e2		add	r1, r6, #0xb0
+000000ef		svc	#0
+db1086e2		add	r1, r6, #0xdb
+000000ef		svc	#0
+06f12301		add.w	r1, r6, #0x23
+00df    		svc	#0
+06f16801		add.w	r1, r6, #0x68
+00df    		svc	#0
+c71086e2		add	r1, r6, #0xc7
+000000ef		svc	#0
+881086e2		add	r1, r6, #0x88
+000000ef		svc	#0
+f31086e2		add	r1, r6, #0xf3
+00df    		svc	#0
+1d1086e2		add	r1, r6, #0x1d
+00df    		svc	#0
+1d1086e2		add	r1, r6, #0x1d
+000000ef		svc	#0
+1d1086e2		add	r1, r6, #0x1d
+00df    		svc	#0
+1d1086e2		add	r1, r6, #0x1d
+00df    		svc	#0
+7f1086e2		add	r1, r6, #0x7f
+000000ef		svc	#0
+b01086e2		add	r1, r6, #0xb0
+000000ef		svc	#0
+06f1ce01		add.w	r1, r6, #0xce
+000000ef		svc	#0
+06f19c01		add.w	r1, r6, #0x9c
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+00df    		svc	#0
+06f10601		add.w	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+061086e2		add	r1, r6, #6
+000000ef		svc	#0
+06f10601		add.w	r1, r6, #6
+00df    		svc	#0
+06f19c01		add.w	r1, r6, #0x9c
+00df    		svc	#0
+000020e0		eor	r0, r0, r0
+4ff00107		mov.w	r7, #1
+00df    		svc	#0
